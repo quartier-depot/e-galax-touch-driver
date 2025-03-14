@@ -1,6 +1,12 @@
 # e-galax-touch-driver
 
-> A snap containing the eGalaxTouch driver
+> eGalax USB Touchscreen Driver packaged as snap
+
+## How to build
+
+1. Specify version in `build.sh` 
+2. Run `build.sh` 
+3. Run `snapcraft`
 
 ## Here's what AI says on how to "install" the driver on Ubuntu Core
 
@@ -53,7 +59,6 @@ parts:
     stage-packages:
       - libudev1
       - libx11-6
-
 ```
 
 Explanation of Key Sections
