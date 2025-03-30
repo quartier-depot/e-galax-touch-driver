@@ -4,9 +4,16 @@
 
 ## How to build
 
-1. Specify version in `build.sh` 
+1. Specify version in `build.sh`
 2. Run `build.sh` 
 3. Run `snapcraft`
+4. Install snap on device
+
+### Requirements
+
+* 7z
+* sed (`build.sh` uses Ubuntu, not Mac)
+* snapcraft
 
 ## Here's what AI says on how to "install" the driver on Ubuntu Core
 
@@ -20,7 +27,7 @@ due to its read-only filesystem and security model. Here are the recommended ste
 5. Grant necessary permissions: `snap connect egalax-touch-driver:hardware-observe` and `snap connect egalax-touch-driver:raw-usb`
 6. Reboot the device to apply changes: `sudo reboot`
 
-### Example snapgcraft.yaml
+### Example snapcraft.yaml
 
 Below is an example of a snapcraft.yaml file for packaging the eGalax touchscreen driver as a snap. 
 This configuration assumes the driver is installed via the provided shell script (setup.sh) 

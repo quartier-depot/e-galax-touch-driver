@@ -15,4 +15,4 @@ rm -rf $version
 7z x "$file"
 
 # set CPU arch
-sed -i '' 's/cpuArch=""/cpuArch="64"/o' "$version/setup.sh"
+sed -i 's/cpuArch=""/cpuArch="64"/g' "$version/setup.sh"
